@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 4rem;
+    width: 100%;
+    height: 5rem;
+    background: #39A0ED;
+    z-index: 999;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2em;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.1em;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+/* hero section */
+
+main {
+    padding-inline: 5rem;
+}
+
+main section {
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-block: 1rem;
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 3rem;
+}
+
+.home .left {
+    width: 50%;
+    padding: 2rem;
+}
+
+.left .greet {
+    font-size: 1em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.left h1 {
+    font-size: 3em;
+    margin-block: 1rem;
+}
+
+.left  .web {
+    color: #39A0ED;
+}
+
+/* ----------------------------- */
+
+.home .right {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background: url(images/_\ \(5\).jpeg);
+    background-size: cover;
+}
+
+.home .right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/New.jpg);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: screen;
+}
+
+/* about section */
+
+main .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about__image {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: url(images/_\ \(5\).jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about .about__image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/Mask5.jpg);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: screen;
+}
+
+.about .about__content {
+    text-align: center;
+}
+
+.about__content p {
+    width: 600px;
+    margin-block-end: 2rem;
+}
+
+.about__content .btn__two {
+    text-decoration: none;
+    color: #39A0ED;
+    padding: .6rem 1.5rem;
+    background: #000;
+    border-radius: 1rem;
+}
+
+/* portfolio section */
+
+main .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio .port__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.port__container .card {
+    width: 200px;
+    height: 350px;
+    box-shadow: 2px 5px 10px #0005;
+    border-radius: 1rem;
+    margin-block: 2rem 1rem;
+}
