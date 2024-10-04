@@ -8,12 +8,14 @@
 </head>
 <body>
     <header>
-        <div class="logo">A M</div>
+        <div class="logo">Portfolio.</div>
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><ion-icon name="menu-outline"></ion-icon></label>
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#project">Project</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -22,8 +24,9 @@
     <main>
         <section class="home" id="hero">
             <div class="left">
-                <span class="greet">Hello, I'm ANDAMA MANSUR</span>
-                <H1>WEB  <br><span class="web">DEVELOPER</span></H1>
+                <span class="greet">Hello, I'm A - Mansur</span>
+                <H1>WEB <br><span class="web">DEVELOPER</span></H1>
+                <a href="#contact" target="_blank">Get in touch</a>
             </div>
 
             <div class="right">
@@ -34,35 +37,136 @@
         <!-- about -->
 
         <section class="about" id="about">
-            <div class="about__image">
-            </div>
-            <div class="about__content">
-                <h2>ABOUT ME</h2>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aliquid iusto repellat consectetur nesciunt ad incidunt 
-                    laudantium, tempora accusantium ea nisi voluptatum odio 
-                    ipsam nulla illum in perspiciatis excepturi natus blanditiis 
-                    maxime cum nobis similique deleniti corrupti obcaecati. Repellat
-                     ab doloremque ullam adipisci neque error nesciunt, repudiandae 
-                     recusandae laborum, veritatis nemo.
-                </P>
-                <a href="#" class="btn__two">Get in touch</a>
+            <div class="row">
+                <div class="img__rapper">
+                    <img src="images/Setup.jpeg" alt="">
+                </div>
+                <div class="content__wrapper">
+                    <div class="content">
+                        <span class="text__wrapper">
+                            <span></span>About Me
+                        </span>
+                        <h3>Andama Mansur</h3>
+                        <p>
+                            I'm a dedicated web development enthusiast passionate about crafting innovative digital solutions. Currently immersed in learning HTML and CSS at Kanzu-Code Foundation, I'm steadily progressing toward my goal of becoming a skilled software engineer. My enthusiasm and commitment drive my journey to mastering the fundamentals of web development.
+                        </p>
+                        <a href="#contact" target="_blank">Get in touch</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- portfolio -->
+        <!-- ! projects -->
 
-        <section class="portfolio" id="portfolio">
-            <h2>PROTFOLIO</h2>
-            <div class="port__container">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+        <section class="project" id="project">
+            <h2>PROJECTS</h2>
+            <div class="container">
+                <div class="project__cards">
+                    <div class="card">
+                        <div class="left">
+                            <div class="image">
+                                <img src="images/PROJECT1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h3>PORTFOLIO</h3>
+                            <p>A visually appealing, responsive online portfolio showcasing my skills and projects, built with HTML and CSS.</p>
+                                <a href="https://giantwolf-portfolio.netlify.app/" class="btn__3" target="_blank">Live demo</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="left">
+                            <div class="image">
+                                <img src="images/PROJECT2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h3>COFFEE MENU</h3>
+                            <p>A visually stunning, responsive menu featuring a diverse selection of coffee beverages, complete with prices.</p>
+                            <a href="https://jerrymansurjoe.github.io/Coffee-menu/" class="btn__3" target="_blank">Live demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+        <!-- contact -->
+
+        <section class="contact" id="contact">
+            <h2>CONTACT</h2>
+            <div class="contact__container">
+                <div class="contact__content">
+                    <div class="left__side">
+                        <div class="address__content">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <div class="addrs__title">Adress</div>
+                            <div class="city">Kampala, UG</div>
+                        </div>
+                        <!--? --------------------------------------- -->
+                        <div class="address__content">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <div class="addrs__title">Phone</div>
+                            <div class="city">256 (0) 700 935 682</div>
+                        </div>
+                        <!--? -------------------------------------- -->
+                        <div class="address__content">
+                            <ion-icon name="mail-unread-outline"></ion-icon>
+                            <div class="addrs__title">Email</div>
+                            <div class="city">andamamansur82@gmail.com</div>
+                        </div>
+                    </div>
+    
+                    <!-- ?------------------------------------------ -->
+    
+                    <div class="right__side">
+                        <div class="headin">Send me a message</div>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus.</p> -->
+    
+                        <!-- ?---------------------------------- -->
+                         
+                        <form>
+                            <div class="input__field">
+                                <input type="text" placeholder="Enter your name">
+                            </div>
+    
+                            <div class="input__field">
+                                <input type="email" placeholder="Enter your email">
+                            </div>
+    
+                            <textarea class="text__area" placeholder="Your message"></textarea>
+    
+                            <div class="btn">
+                                <button class="button">Send <ion-icon name="paper-plane-outline"></ion-icon></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
+        <div class="footer__container">
+            <div class="social__icons">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="footer__nav">
+                <ul><li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer__bottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">A-mansur</span></p>
+        </div>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
